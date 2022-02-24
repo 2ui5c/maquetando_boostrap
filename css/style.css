@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: rgb(33, 37, 41);
+}
+
+.centrarCaja {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    height: max-content;
+    background-color:gainsboro
+}
+
+.mainGallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color:gainsboro
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 37, 41);
+    color: aliceblue;
+}
+
+@media (max-width: 576px) {
+
+    .footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer p {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+}
